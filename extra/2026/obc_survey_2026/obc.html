@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Awnto OBC Survey 2026 Draft</title>
+
+<style>
+
+ body {
+      margin: 0;
+      padding: 16px;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #fafafa;
+      color: #222;
+      text-align: center;
+      
+    }
+    h2 {
+      margin: 0 0 12px 0;
+      font-size: 1.2rem;
+    }
+    .go_center
+    {
+    	 margin: 0 auto; 
+      text-align: center;
+    	
+    	
+    }
+    .go_center_table
+    {
+    	 margin: 0 auto; 
+      text-align: center;
+    	
+    	
+    }
+    .modx {
+      white-space: pre-wrap;   /* preserve line breaks, wrap long lines */
+      word-wrap: break-word;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+      font-size: 15px;
+      line-height: 1.5;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 2px;
+      overflow-y: auto;
+      min-width: 50px;
+    }
+     .modxb {
+      white-space: pre-wrap;   /* preserve line breaks, wrap long lines */
+      word-wrap: break-word;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+      font-size: 15px;
+      line-height: 1.5;
+      background-color: #dde7ff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 2px;
+      max-height: 80vh;
+      overflow-y: auto;
+      min-width: 40px;
+    }
+    .modxb2 {
+      white-space: pre-wrap;   /* preserve line breaks, wrap long lines */
+      word-wrap: break-word;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+      font-size: 15px;
+      background-color: #dde7ff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 2px;
+      max-height: 80vh;
+      width: 30px;
+      height: 30px;
+    }
+    
+    .modxt {
+      white-space: pre-wrap;   /* preserve line breaks, wrap long lines */
+      word-wrap: break-word;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+      font-size: 15px;
+      line-height: 1.5;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 5px;
+      height: 80px;
+      width: calc(200px);
+      overflow-y: auto;
+    }
+    
+.modxb:hover {
+  background-color: #f0f8ff; /* light blue */
+  color: #333;
+}
+
+/* Click (active) effect */
+.modxb:active {
+  background-color: #cce7ff; /* darker blue */
+  color: #000;
+}
+
+ 
+.modxb2:hover {
+  background-color: #f0f8ff; /* light blue */
+  color: #333;
+}
+
+/* Click (active) effect */
+.modxb2:active {
+  background-color: #cce7ff; /* darker blue */
+  color: #000;
+}
+    #status {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: #2c7a3f;
+    }
+    
+    table {
+      /* border-collapse: collapse;  ensures borders don’t double up */
+      border-radius: 8px;
+      border: 1px solid black;
+     
+       
+    }
+
+    table, tr, td {
+       border-collapse: collapse;
+       border: 1px solid black; /* sets border for table, rows, and cells */
+    }
+
+    td {
+      padding: 2px; /* adds spacing inside cells */
+      text-align: center;
+    }
+    
+    #output { margin-top: 15px; font-size: 20px; }
+    #suggestions { margin-top: 10px; border: 1px solid #ccc; padding: 8px; max-width: 320px; }
+    #suggestions div { padding: 4px; cursor: pointer; }
+    #suggestions div:hover { background-color: #f0f0f0; }
+    
+    #hindi_sug_div
+    {
+    	position: absolute;
+    	background-color: white;
+    }
+    
+    #show_profile_photo
+    {
+    	
+    	font-size: 24px;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	font-weight: bold;
+	max-width: calc(100% - 0px);
+    }
+    .class_profile_photo_td
+    {
+    	padding: 0px;
+    	margin: 0px;
+    }
+    .class_profile_photo_div
+    {
+    	padding: 0px;
+    	margin: 0px;
+    	width: 90px;
+    	height: 120px;
+    	display: flex;
+    	justify-content: center;
+  	align-items: center;  
+    }
+    #edit-birth
+    {
+    	width:20px;
+    }
+    #edit-root
+    {
+    	width:120px;
+    }
+    .pre_cont
+    {
+    	color: #dddddd;
+    }
+    .text_vert
+    {
+    	writing-mode: vertical-rl;
+    }
+
+</style>
+  
+</head>
+<body>
+ <div class="go_center" >
+ <!--
+  <h2>________  Awnto OBC Survey 2026 Draft ____</h2>
+  -->
+  <table class="go_center_table" >
+  	<tr>
+  		<td></td>
+  		<td>Q</td><td>Question</td><td>Answer</td>
+  		<td></td>
+  		<td>Q</td><td>Question</td><td>Answer</td>
+		<td rowspan="23" class="pre_cont" >Remarks</td>
+  	</tr>
+  	<tr>
+  		<td  ></td>
+  		<td colspan=3 ></td>
+  		<td colspan=1 ></td>
+  		<td colspan=3 ></td>
+  	</tr>
+  	
+  	
+  	
+  	<tr>
+  		<td rowspan="5" class="text_vert" >Require</td>
+  		<td>Q1</td><td>BPL</td><td class="pre_cont" >y/n</td>
+  		<td></td>
+  		<td>Q2</td><td>Food</td><td class="pre_cont" >y/n</td>
+  	</tr>
+  	<tr>
+  		<td>Q3</td><td>Polity</td><td class="pre_cont" >y/n</td>
+  		<td></td>
+  		<td>Q4</td><td>Caste</td><td class="pre_cont" >caste</td>
+  	</tr>
+  	
+  	
+  	<tr>
+  		
+  		<td>Q5</td><td>Head</td><td colspan=5 class="pre_cont" >Name of Head of the Family</td>
+  	</tr>
+  	<tr>
+  		<td>Q6</td><td>Ph No</td><td  class="pre_cont" >Phone Number</td>
+  		<td></td><td>Q7</td><td>Age Gender</td><td  class="pre_cont" >___ M/F</td>
+  	</tr>
+  	
+  	<tr>
+  		<td>Q8</td><td>Education</td><td  class="pre_cont" >Qualification</td>
+  		<td></td><td>Q9</td><td>Occupation</td><td  class="pre_cont" >Occupation</td>
+  	</tr>
+  	
+  	
+  	<tr>
+  		<td></td><td colspan=3 ></td><td colspan=1 ></td><td colspan=3 ></td>
+  	</tr>
+  	<tr>
+  		<td rowspan="2" class="text_vert" >Member</td>
+  		<td>Q1</td><td>Name</td><td colspan=3 class="pre_cont" >Name</td>
+  		<td>Relation</td><td  class="pre_cont" >____</td>
+  	</tr>
+  	<tr>
+  		<td>Q3</td><td>Edu/Work</td><td  class="pre_cont" >edu/work</td>
+  		<td></td><td >Q2</td><td>Age Gender</td><td  class="pre_cont" >___ M/F</td>
+  	</tr>
+  	
+  	
+  	<tr>
+  		<td></td><td colspan=3 ></td><td colspan=1 ></td><td colspan=3 ></td>
+  	</tr>
+  	<tr>
+  		<td rowspan="2" class="text_vert" >Member</td>
+  		<td>Q1</td><td>Name</td><td colspan=3 class="pre_cont" >Name</td>
+  		<td>Relation</td><td  class="pre_cont" >____</td>
+  	</tr>
+  	<tr>
+  		<td>Q3</td><td>Edu/Work</td><td  class="pre_cont" >edu/work</td>
+  		<td></td><td >Q2</td><td>Age Gender</td><td  class="pre_cont" >___ M/F</td>
+  	</tr>
+  	
+  	
+  	<tr>
+  		<td></td><td colspan=3 ></td><td colspan=1 ></td><td colspan=3 ></td>
+  	</tr>
+  	<tr>
+  		<td rowspan="2" class="text_vert" >Member</td>
+  		<td>Q1</td><td>Name</td><td colspan=3 class="pre_cont" >Name</td>
+  		<td>Relation</td><td  class="pre_cont" >____</td>
+  	</tr>
+  	<tr>
+  		<td>Q3</td><td>Edu/Work</td><td  class="pre_cont" >edu/work</td>
+  		<td></td><td >Q2</td><td>Age Gender</td><td  class="pre_cont" >___ M/F</td>
+  	</tr>
+  	
+  	
+  	
+  
+  	
+  </table>
+ </div>
+
+</body>
+</html>
